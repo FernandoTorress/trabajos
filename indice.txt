@@ -1,3 +1,31 @@
-Cap�tulo 1: Introducci�n a Git 
-Cap�tulo 2: Flujo de trabajo b�sico 
-Cap�tulo 4: Repositorios remotos 
+EJERCICIO 1
+git config --global user.name "[FernandoTorres]"  
+git config --global user.email "[fernando28torresss@gmail.com]"
+git config --global color.ui auto 
+git config --list  
+EJERCICO 2
+mkdir libro
+cd libro  
+git init 
+dir
+EJERCICIO 3
+git status
+echo Capítulo 1: Introducción a Git >> indice.txt
+echo Capítulo 2: Flujo de trabajo básico >> indice.txt
+echo Capítulo 3: Repositorios remotos >> indice.txt
+git status
+git add indice.txt
+git status
+EJERCICIO 4
+git commit -m "Añadido capitulo 3 sobre gestion de ramas"
+git status
+EJERCICIO 5
+echo Capítulo 3: Gestión de ramas >> indice.txt
+git diff
+git commit --amend -m "Añadiendo capitulo 3 sobre gestion de ramas al indice"
+EJERCICO 6
+git show  
+git commit --amend -m "Añadiendo copitulo 3 sobre gestion de ramas al indice"
+PARA SUBIR AL REPOSITORIO
+git romte add FernandoTorres https://github.com/FernandoTorress/trabajos.git
+git push --set-upstream FernandoTorres master    
